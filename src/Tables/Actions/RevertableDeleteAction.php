@@ -17,10 +17,11 @@ class RevertableDeleteAction extends \Filament\Tables\Actions\Action
     {
         parent::setUp();
 
-        $this->color('danger');
-        $this->groupedIcon('heroicon-s-trash');
-        $this->icon('heroicon-s-trash');
+        $this->color('green');
+        $this->groupedIcon('heroicon-s-arrow-uturn-down');
+        $this->icon('heroicon-s-arrow-uturn-down');
         $this->label(__('filament-support::actions/delete.single.label'));
+        $this->name('RevertableDeleteAction');
 
         $this->action(function (array $data, Model $record): void {
             $this->ensureModelIsSoftDeleted();
