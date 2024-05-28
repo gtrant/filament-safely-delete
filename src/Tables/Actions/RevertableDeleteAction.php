@@ -4,7 +4,7 @@ namespace Konnco\FilamentSafelyDelete\Tables\Actions;
 
 use Filament\Notifications\Actions\Action;
 use Filament\Notifications\Notification;
-use Filament\Support\Actions\Concerns\CanCustomizeProcess;
+use Filament\Actions\Concerns\CanCustomizeProcess;
 use Illuminate\Database\Eloquent\Model;
 use Konnco\FilamentSafelyDelete\Exceptions\RevertableTraitNotImplemented;
 use Throwable;
